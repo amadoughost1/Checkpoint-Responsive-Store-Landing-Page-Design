@@ -1,0 +1,140 @@
+/* Style global */
+body {
+    font-family: Arial, sans-serif;
+    margin: auto;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Conteneur principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* En-tête */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+}
+
+header .logo {
+    font-size: 2em;
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+header nav ul li a:hover{
+    background-color:aqua;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Section produits */
+#produits {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#produits h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.produits-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.produit {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 22%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.produit img {
+    max-width: 100%;
+    height: auto;
+}
+
+.produit h3 {
+    font-size: 1.3em;
+    margin: 10px 0;
+}
+
+.produit p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.produit button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.produit button:hover {
+    background-color: #555;
+}
+
+/* Pied de page */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Styles réactifs */
+@media screen and (max-width: 768px) {
+    .produits-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produit {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .produit {
+        width: 90%;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+}
